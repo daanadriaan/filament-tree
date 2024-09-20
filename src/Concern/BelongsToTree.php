@@ -21,7 +21,7 @@ trait BelongsToTree
         return $this->tree;
     }
 
-    public function getLivewire(): HasTree
+    public function getLivewire(): HasTree|\Livewire\Component
     {
         return $this->getTree()->getLivewire();
     }
